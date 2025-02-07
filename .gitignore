@@ -1,4 +1,6 @@
-/Database/DataBase.Migragtion/obj
-/Database/DataBase.Migragtion/bin
-/Database/Database/bin
-/Database/Database/obj
+.vs/
+*.sqlproj.user
+*.dbmdl
+*.jfm
+bin/
+obj/
