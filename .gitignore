@@ -4,3 +4,5 @@
 *.jfm
 bin/
 obj/
+/Database/Database/*.jfm
+/Database/Database/*.user
