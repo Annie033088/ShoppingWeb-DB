@@ -1,0 +1,1 @@
+﻿ALTER TABLE t_member DROP COLUMN f_ttt 

@@ -6,3 +6,8 @@ bin/
 obj/
 /Database/Database/*.jfm
 /Database/Database/*.user
+/Database/Database/*.dbmdl
+/Database/Database/bin/
+/Database/Database/obj/
+/Database/DataBase.Migragtion/bin/
+/Database/DataBase.Migragtion/obj/
