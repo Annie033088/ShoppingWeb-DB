@@ -1,34 +1,54 @@
-# ShoppingWeb-DB說明 #
-
-## 簡介 ##
-
-- 這個ShoppingWeb-DB方案的目的是載入本專案使用到的資料庫並紀錄資料庫遷移歷史
-- 這個方案包括VS主控台應用程式專案及VS SQL Project專案。
+# ShoppingWeb-DB方案說明 #
 
 ## 目錄 ##
 
 1. 簡介
-2. 安裝
-3. 使用方式
-4. 備註
+2. 還原專案
+3. 從專案Migration至DB流程
+4. 從DB還原至專案流程
+5. 其他備註
 
-## 安裝 ##
+## 簡介 ##
 
-1. 複製ShoppingWeb-DB`git clone https://github.com/Annie033088/ShoppingWeb-DB.git`
-2. 進入Database資料夾並打開方案
-3. 安裝Nuget套件:DbUp
+ShoppingWeb-DB方案包含兩個Visual Studio專案
+分別為DataBase.Migration(主控台應用程式)及Database(SQL Project)
 
-## 使用方式 ##
+DataBase.Migration功能為：
 
-- 載入資料庫到SQL Server：
+ <!-- 1. 記錄資料庫的遷移記錄 -->
+ <!-- 2. 將資料庫內容還原 -->
+...//TODO:添加功能說明
+
+ Database功能為：
+...//TODO:添加功能說明
+
+## 還原專案 ##
+
+1. 複製ShoppingWeb-DB Repo `git clone https://github.com/Annie033088/ShoppingWeb-DB.git`
+2. 進入Database資料夾運行方案(Database.sln)
+3. 重建方案同時還原已安裝Nuget套件(DbUp)
+
+### 從專案Migration至DB流程 ###
+
+<!-- - 載入資料庫到SQL Server：
     1. 打開Database專案, 右鍵Database專案, 點擊發佈, 按照發布流程將SQL SERVER的Pashamao資料庫建立完畢
 - 欲更新資料庫結構：
-    1. 打開SQL Server的Pashamao資料庫, 並執行DataBase.Migragtion底下的InitializeSchemaVersionsTable.sql檔案 [說明](#將資料插入schemaversions的表)
+    1. 打開SQL Server的Pashamao資料庫, 並在資料庫內執行DataBase.Migration底下的InitializeSchemaVersionsTable.sql檔案 [說明](#將資料插入schemaversions的表)
     2. 設定DataBase.Migration的Program.cs裡的資料庫連線字串
     3. 將要更新的資料庫指令檔案(.sql檔案)存入DataBase.Migration的SQLScripts資料夾底下, 並執行DataBase.Migration專案
-    4. 右鍵點擊Database專案, 點擊結構描述比較, 更新Database專案的資料庫結構
+    4. 右鍵點擊Database專案, 點擊結構描述比較, 更新Database專案的資料庫結構 -->
 
-## 備註 ##
+...//TODO:添加流程及說明，建議同時添加圖片輔助解釋
+
+### 從DB還原至專案流程 ###
+
+...//TODO:添加流程及說明，建議同時添加圖片輔助解釋
+
+## 其他備註 ##
+
+### DbUp套件說明 ###
+
+//TODO: 添加套件說明
 
 ### 將資料插入SchemaVersions的表 ###
 
