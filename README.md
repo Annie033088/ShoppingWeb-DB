@@ -30,7 +30,7 @@ Database功能為：將資料庫內容還原
 ### 從專案Migration至DB流程 ###
 
 1. 打開SQL Server的資料庫, 並在資料庫內執行DataBase.Migration底下的InitializeSchemaVersionsTable.sql檔案 [說明](#將資料插入schemaversions的表)
-![Initialize Image](https://camo.githubusercontent.com/{hash}/https://github.com/Annie033088/Private-Image/blob/Main/Guide/Initialize1.png)
+![Initialize Image](https://github.com/Annie033088/Private-Image/blob/Main/Guide/Initialize1.png)
 2. 設定DataBase.Migration的Program.cs裡的資料庫連線字串
 3. 將要更新的資料庫指令檔案(.sql檔案)存入DataBase.Migration的SQLScripts資料夾底下, 並執行DataBase.Migration專案
 4. 右鍵點擊Database專案, 點擊結構描述比較, 更新Database專案的資料庫結構
