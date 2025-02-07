@@ -1,0 +1,1 @@
+﻿ALTER TABLE t_member ADD f_ttt INT

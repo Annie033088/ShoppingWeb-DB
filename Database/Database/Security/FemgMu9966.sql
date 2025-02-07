@@ -1,0 +1,2 @@
+﻿CREATE USER [FemgMu9966] FOR LOGIN [FemgMu9966];
+
