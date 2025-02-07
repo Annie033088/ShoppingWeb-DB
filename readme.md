@@ -13,9 +13,7 @@
 
 ## 安裝 ##
 
-1. 複製ShoppingWeb-DB
-
-`git clone https://github.com/Annie033088/ShoppingWeb-DB.git`
+1. 複製ShoppingWeb-DB`git clone https://github.com/Annie033088/ShoppingWeb-DB.git`
 2. 進入Database資料夾並打開方案
 3. 安裝Nuget套件:DbUp
 
@@ -23,6 +21,6 @@
 
 - 載入資料庫到SQL Server：打開Database專案, 右鍵Database專案, 點擊發佈, 按照發布流程將SQL SERVER的Pashamao資料庫建立完畢
 - 欲更新資料庫結構：
-    1. 設定DataBase.Migration的Program.cs裡的資料庫連線字串,
+    1. 設定DataBase.Migration的Program.cs裡的資料庫連線字串
     2. 將要更新的資料庫指令檔案(.sql檔案)存入DataBase.Migration的SQLScripts資料夾底下, 並執行DataBase.Migration專案
     3. 右鍵點擊Database專案, 點擊結構描述比較, 更新Database專案的資料庫結構
