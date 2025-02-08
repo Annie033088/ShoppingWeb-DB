@@ -31,11 +31,13 @@ Database 功能為：將資料庫內容還原
 
 ### 從專案 Migration 至 DB 流程 ###
 
-1. 打開 SQL Server 的資料庫, 並在資料庫內執行 DataBase.Migration 底下的I nitializeSchemaVersionsTable.sql 檔案 [說明](#將資料插入schemaversions的表)
+1. 打開 SQL Server 的資料庫, 並在資料庫內執行 DataBase.Migration 底下的
+ InitializeSchemaVersionsTable.sql 檔案 [說明](#將資料插入schemaversions的表)
 ![Initialize Image](https://github.com/Annie033088/ShoppingWeb-DB/blob/Main/img/Introduce2.png)
 2. 設定 DataBase.Migration 的 Program.cs 裡的資料庫連線字串
 ![Initialize Image](https://github.com/Annie033088/ShoppingWeb-DB/blob/Main/img/Introduce3.png)
-3. 將要更新的資料庫指令檔案 (.sql檔案) 存入 DataBase.Migration 的 SQLScripts 資料夾底下，並執行 DataBase.Migration 專案
+3. 將要更新的資料庫指令檔案 (.sql檔案) 存入 DataBase.Migration 的 SQLScripts 資料夾底下，
+並執行 DataBase.Migration 專案
 ![Initialize Image](https://github.com/Annie033088/ShoppingWeb-DB/blob/Main/img/Introduce4.png)
 
 已完成資料庫 Migration
@@ -56,5 +58,6 @@ Database 功能為：將資料庫內容還原
 ### 將資料插入SchemaVersions的表 ###
 
 - 目的：讓 DataBase.Migration 執行的時候， DbUp 套件可以正確判斷哪些 script (.sql檔案) 已經被執行過了
-- 原理：當使用 DbUp 來做資料庫更新的時候，資料庫內會產生 SchemaVersions 這張表，這張表會紀錄專案中的 SQLScripts 資料夾內的哪些 script 已經被執行過了，
+- 原理：當使用 DbUp 來做資料庫更新的時候，資料庫內會產生 SchemaVersions 這張表，這張表會紀錄專案中的 SQLScripts 資料夾內的哪
+些 script 已經被執行過了，
         因此當需要更新資料庫結構時，必須先將 SchemaVersions 這張紀錄表還原，才能正確執行 script (.sql檔案)
