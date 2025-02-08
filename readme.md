@@ -4,9 +4,10 @@
 
 1. 簡介
 2. 還原專案
-3. 從專案Migration至DB流程
-4. 從DB還原至專案流程
-5. 其他備註
+3. 從 Database 專案建構 SQL 資料庫
+4. 從專案 Migration 至 DB 流程
+5. 從 DB 還原至專案流程
+6. 其他備註
 
 ## 簡介 ##
 
@@ -48,7 +49,7 @@ Database 功能為：將資料庫內容還原
 
 ### DbUp套件說明 ###
 
-- 簡述： DbUp 是一個開源的 .NET 工具，專門用來執行 版本控制的資料庫遷移 (Database Migrations)
+- 簡述： DbUp 是一個開源的 .NET 工具，專門用來執行版本控制的資料庫遷移 (Database Migrations)
 - 主要功能：利用 _SchemaVersions 表格，記錄哪些 SQL 已執行過，避免重複執行
 - 進階功能： 加入 Transaction (確保更新失敗時回滾) `.WithTransaction()`
 
