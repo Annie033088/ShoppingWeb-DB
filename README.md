@@ -55,6 +55,6 @@ Database 功能為：將資料庫內容還原
 
 ### 將資料插入SchemaVersions的表 ###
 
-- 目的：讓 DataBase.Migration 執行的時候， DbUp 套件可以正確判斷哪些script (.sql檔案) 已經被執行過了
+- 目的：讓 DataBase.Migration 執行的時候， DbUp 套件可以正確判斷哪些 script (.sql檔案) 已經被執行過了
 - 原理：當使用 DbUp 來做資料庫更新的時候，資料庫內會產生 SchemaVersions 這張表，這張表會紀錄專案中的 SQLScripts 資料夾內的哪些 script 已經被執行過了，
         因此當需要更新資料庫結構時，必須先將 SchemaVersions 這張紀錄表還原，才能正確執行 script (.sql檔案)
